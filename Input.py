@@ -169,15 +169,15 @@ def pedir_nombre(mensaje:str, minimo:int) -> str:
     return dato
 
 def pedir_contraseña(mensaje:str) -> str:
-    """Solicita al usuario una contraseña y valida que tenga mas de 8 caracteres.
+    """Solicita al usuario una contraseña y valida que tenga 8 caracteres como minimo.
     Args:
         mensaje (str): mensaje a mostrar al usuario.
     Returns:
         str: contraseña ingresada por el usuario.
     """
     cadena = ingresar_cadena(mensaje)
-    while len(cadena) <= 8:
-        print("Error, la contraseña debe ser mayor a 8 caracteres.")
+    while len(cadena) < 8:
+        print("Error, la contraseña debe tener 8 caracteres como minimo.")
         cadena = ingresar_cadena(mensaje)
     return cadena
 

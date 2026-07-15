@@ -39,7 +39,7 @@ usuarios = [
     },
     {
         "usuario": "admincomida",
-        "contrasena": "admin7777",
+        "contrasena": "admin777",
         "tipo": "Administrador"
     }
 ]

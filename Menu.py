@@ -16,6 +16,11 @@ def elegir_menu(max:int) -> int:
 def iniciar_menu():
     while True:
         mostrar_menu_inicio()
+        opcion = elegir_menu(2)
+        if opcion == 2:
+            print("Saliendo del sistema...")
+            break
+
         usuario_logueado = iniciar_sesion()
         if usuario_logueado is None:
             print("Usuario o contraseña incorrectos.")
